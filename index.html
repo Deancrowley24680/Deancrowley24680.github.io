@@ -14,14 +14,17 @@
             color: #d4af37;
             text-align: center;
         }
-        .container {
+        .container, .contact-container {
             padding: 20px;
             margin-top: 40px;
         }
-        h1 {
+        h4 {
             color: #d4af37;
             font-size: 48px;
-            margin: 20px 0;
+            margin-bottom: 0; 
+        }
+        h2 {
+            margin-top: 20px;
         }
         section {
             margin-bottom: 40px;
@@ -50,6 +53,12 @@
             background-color: #b29700;
             color: #fff;
         }
+        .contact-container {
+            background-color: #222; 
+            color: #d4af37;
+            margin-top: 60px;
+            padding-bottom: 20px;
+        }
         @media (max-width: 768px) {
             .resources {
                 flex-direction: column;
@@ -62,7 +71,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Digital Memorials</h1>
+        <h4>A React, Cloud Based, Web Application for Digital Memorial Toolkit Service</h4>
         
         <section id="overview">
             <h2>Project Overview</h2>
@@ -84,6 +93,12 @@
             <h2>GitHub Repository</h2>
             <a href="https://github.com/Deancrowley24680/digital-memorials" target="_blank" class="button">View on GitHub</a>
         </section>
+    </div>
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Dean Crowley</p>
+        <p>Email: <a href="mailto:deancrowley1@gmail.com" style="color: #d4af37;">deancrowley1@gmail.com</a></p>
+        <p>Student Number: 20089889</p>
     </div>
 </body>
 </html>
