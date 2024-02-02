@@ -6,26 +6,28 @@
     <title>Digital Memorials</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        body, html {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            height: 100%;
             background-color: #000;
             color: #d4af37;
             text-align: center;
         }
-        .container, .contact-container {
+        .container {
             padding: 20px;
-            margin-top: 40px;
+            padding-bottom: 80px; 
         }
         img.logo {
-            max-width: 100%;
+            width: 200px; 
             height: auto;
         }
         h4 {
             color: #d4af37;
             font-size: 20px;
-            margin-bottom: 20px; 
+            margin-top: 30px; 
+            margin-bottom: 40px; 
         }
         h2 {
             margin-top: 20px;
@@ -57,11 +59,14 @@
             background-color: #b29700;
             color: #fff;
         }
-        .contact-container {
-            background-color: #222; 
+        footer {
+            background-color: #222;
             color: #d4af37;
-            margin-top: 60px;
-            padding-bottom: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
         }
         @media (max-width: 768px) {
             .resources {
@@ -75,21 +80,12 @@
 </head>
 <body>
     <div class="container">
-
         <img src="Logo.jpg" alt="Digital Memorials Logo" class="logo">
-        
         <h4>A React, Cloud Based, Web Application for Digital Memorial Toolkit Service</h4>
         
         <section id="overview">
             <h2>Project Overview</h2>
-            <p>The aim of Digital Memorials is to modernise Ireland’s rich tradition of remembering
-                those who have passed. Building upon what is already out there, each app produced
-                will aim to create an original and custom space online that anyone can visit and
-                contribute to. It can be a private area for people to remember their loved ones while
-                also a community of people, uploading and collecting memories on the domain of the
-                namesake. Those who own their family’s domain name will be able to build a family
-                tree of memorials using subdomains and have them all linked together through each
-                member’s own app.</p>
+            <p>The aim of Digital Memorials is to modernise Ireland’s rich tradition of remembering those who have passed. Building upon what is already out there, each app produced will aim to create an original and custom space online that anyone can visit and contribute to. It can be a private area for people to remember their loved ones while also a community of people, uploading and collecting memories on the domain of the namesake. Those who own their family’s domain name will be able to build a family tree of memorials using subdomains and have them all linked together through each member’s own app.</p>
         </section>
 
         <div class="resources">
@@ -108,11 +104,11 @@
             <a href="https://github.com/Deancrowley24680/digital-memorials" target="_blank" class="button">View on GitHub</a>
         </section>
     </div>
-    <div class="contact-container">
+    <footer>
         <h2>Contact Me</h2>
         <p>Dean Crowley</p>
         <p>Email: <a href="mailto:deancrowley1@gmail.com" style="color: #d4af37;">deancrowley1@gmail.com</a></p>
         <p>Student Number: 20089889</p>
-    </div>
+    </footer>
 </body>
 </html>
